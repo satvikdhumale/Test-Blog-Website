@@ -48,7 +48,7 @@
                           <img src="{{ comment.user.email | gravatar }}"/>
                         </div>
                         <div class="commentText">
-                          <p>{{ comment.text }}</p>
+                          <p>{{ comment.text | safe}}</p>
                           <span class="date sub-text">{{ comment.user.name }}</span>
                         </div>
                     </li>
