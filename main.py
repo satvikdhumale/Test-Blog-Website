@@ -74,7 +74,7 @@ class Comment(db.Model):
     post_id = db.Column(db.Integer, db.ForeignKey('blog_posts.id'))
 
 
-# db.create_all()
+db.create_all()
 
 # To send email to blog owner
 def send_email(name, email, ph_no, msg):
